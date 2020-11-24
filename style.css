@@ -1,0 +1,143 @@
+/* we fix default settings */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* we edit game general container and give background image */
+
+.games-container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url("images/fondo-negro.jpg");
+  background-size: contain;
+}
+
+/* we edit the singular game container  */
+
+.game-link {
+  margin: 40px auto;
+  border-radius: 4px;
+  background-color: #000000;
+}
+
+.game-link p {
+  text-align: center;
+  background-color: #000000;
+  margin: 0px;
+  height: 30px;
+  padding: 10px auto;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 1.4em;
+}
+
+/* hover of the Lets go to the game frase  */
+
+#go {
+  display: none;
+}
+.game-link:hover #go {
+  display: block;
+}
+
+/* whe fix the header */
+.header {
+  flex: 1 0 10%;
+  background: #40739e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  padding: auto;
+}
+.header img {
+  margin: -10px auto;
+}
+
+/* coming soon frase */
+
+.coming-soon {
+  color: white;
+  font-family: "Mrs Sheppards", cursive;
+  font-size: 60px;
+}
+/* footer desing */
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 10%;
+  background: #40739e;
+}
+/*  we conigurate the button and pad the give some margin to the elements */
+
+.footer #top {
+  margin: 120px 150px auto;
+  background-color: rgb(223, 115, 43); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.footer .logo-container{
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+}
+
+/* ----------------------------------------------------------------- */
+/* we proceed to make the design responsive, first on 922 pixs width */
+/* ----------------------------------------------------------------- */
+
+@media only screen and (max-width: 922px) {
+    .game-link {
+    width: 70%;
+    }
+    .game-link img{
+        width: 100%;
+    }
+    .coming-soon {
+        font-size: 5vw;
+      }
+    .footer #top {
+        margin: 100px 50px auto;
+        font-size: 12px;
+      }
+    .footer .logo-container{
+          font-size: 12px;
+      }
+      .game-link p {
+        font-size: 3vw;
+}
+  }
+  /* ------------------------------------ */
+  /* then we continue with 688 pixs width */
+  /* ------------------------------------ */
+
+@media only screen and (max-width: 688px) {
+    .footer {
+        flex-direction: column;
+      }
+      .footer #top {
+        margin: auto;
+        font-size: 12px;
+}
+}
